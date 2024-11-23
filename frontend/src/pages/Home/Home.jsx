@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Home.css'
 import Header from '../../components/Navbar/Header/Header'
 import ExploreMenu from '../../components/Navbar/ExploreMenu/ExploreMenu'
-import FoodDisplay from '../../components/Navbar/FoodDisplay/FoodDisplay'
+import ItemDisplay from '../../components/Navbar/ItemDisplay/ItemDisplay'
 import AppDownload from '../../components/AppDownload/AppDownload'
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
     <div>
         <Header/>
         <ExploreMenu category={category} setCategory={setCategory} />
-        <FoodDisplay category={category}/>
+        <ItemDisplay category={category}/>
         <AppDownload/>
 
     </div>
