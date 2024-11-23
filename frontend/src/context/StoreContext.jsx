@@ -10,7 +10,7 @@ const StoreContextProvider = (props) => {
     const [cartItems,setCartItems] = useState({});
     const url = "http://localhost:4000"
     const [token,setToken] = useState("");
-    const [food_list,setFoodList] = useState([])
+    const [item_list,setFoodList] = useState([])
 
     const addToCart = async (itemId) => {
         if (!cartItems[itemId]){
@@ -36,7 +36,7 @@ const StoreContextProvider = (props) => {
         for(const item in cartItems)
             {
                 if (cartItems[item] > 0) {
-                    let itemInfo = food_list.find((product) => product._id === item);
+                    let itemInfo = item_list.find((product) => product._id === item);
                     totalAmount += itemInfo.price * cartItems[item];
                 }   
             }
@@ -66,7 +66,7 @@ const StoreContextProvider = (props) => {
     },[])
 
     const contextValue = {
-        food_list,
+        item_list,
         cartItems,
         setCartItems,
         addToCart,

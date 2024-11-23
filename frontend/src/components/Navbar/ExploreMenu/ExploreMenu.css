@@ -5,12 +5,15 @@
 }
 
 .explore-menu h1{
+    margin: 27px auto;
     color: #262626 ;
     font-weight: 500;
 }
 
 .explore-menu-text{
-    max-width: 60%;
+    margin: 1px auto;
+    max-width: 90%;
+    text-align: center;
     columns: #808080;
 }
 .explore-menu-list{

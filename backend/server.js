@@ -6,6 +6,10 @@ import userRouter from "./routes/userRoute.js"
 import 'dotenv/config'
 import cartRouter from "./routes/cartRoute.js"
 import orderRouter from "./routes/orderRoute.js"
+import dotenv from 'dotenv';
+dotenv.config();
+
+console.log("JWT_SECRET:", process.env.JWT_SECRET);
 
 //app config
 const app = express()
@@ -32,3 +36,4 @@ app.get("/",(req,res)=>{
 app.listen(port,()=>{
     console.log(`Server Started on http://localhost:${port}`)
 })
+//mongodb+srv://cloths:<db_password>@cluster0.2qvy9.mongodb.net/?

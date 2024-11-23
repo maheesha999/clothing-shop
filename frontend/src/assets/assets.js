@@ -1,48 +1,42 @@
 import basket_icon from './basket_icon.png'
 import logo from './logo.png'
-import header_img from './header_img.png'
+import header_img from './header_img.jpg'
 import search_icon from './search_icon.png'
-import menu_1 from './menu_1.png'
-import menu_2 from './menu_2.png'
-import menu_3 from './menu_3.png'
-import menu_4 from './menu_4.png'
-import menu_5 from './menu_5.png'
-import menu_6 from './menu_6.png'
-import menu_7 from './menu_7.png'
-import menu_8 from './menu_8.png'
+import menu_1 from './menu_1.jpg'
+import menu_2 from './menu_2.jpg'
+import menu_3 from './menu_3.jpg'
+import menu_4 from './menu_4.jpg'
+import menu_5 from './menu_5.webp'
+import menu_6 from './menu_6.jpg'
 
-import food_1 from './food_1.png'
-import food_2 from './food_2.png'
-import food_3 from './food_3.png'
-import food_4 from './food_4.png'
-import food_5 from './food_5.png'
-import food_6 from './food_6.png'
-import food_7 from './food_7.png'
-import food_8 from './food_8.png'
-import food_9 from './food_9.png'
-import food_10 from './food_10.png'
-import food_11 from './food_11.png'
-import food_12 from './food_12.png'
-import food_13 from './food_13.png'
-import food_14 from './food_14.png'
-import food_15 from './food_15.png'
-import food_16 from './food_16.png'
-import food_17 from './food_17.png'
-import food_18 from './food_18.png'
-import food_19 from './food_19.png'
-import food_20 from './food_20.png'
-import food_21 from './food_21.png'
-import food_22 from './food_22.png'
-import food_23 from './food_23.png'
-import food_24 from './food_24.png'
-import food_25 from './food_25.png'
-import food_26 from './food_26.png'
-import food_27 from './food_27.png'
-import food_28 from './food_28.png'
-import food_29 from './food_29.png'
-import food_30 from './food_30.png'
-import food_31 from './food_31.png'
-import food_32 from './food_32.png'
+import item_1 from './item_1.png'
+import item_2 from './item_2.jpg'
+import item_3 from './item_3.webp'
+import item_4 from './item_4.jpg'
+import item_5 from './item_5.jpg'
+import item_6 from './item_6.webp'
+import item_7 from './item_7.avif'
+import item_8 from './item_8.jpg'
+import item_9 from './item_9.avif'
+import item_10 from './item_10.jpg'
+import item_11 from './item_11.avif'
+import item_12 from './item_12.jpg'
+import item_13 from './item_13.jpg'
+import item_14 from './item_14.avif'
+import item_15 from './item_15.jpg'
+import item_16 from './item_16.avif'
+import item_17 from './item_17.jpg'
+import item_18 from './item_18.jpeg'
+import item_19 from './item_19.jpg'
+import item_20 from './item_20.jpg'
+import item_21 from './item_21.avif'
+import item_22 from './item_22.webp'
+import item_23 from './item_23.jpg'
+import item_24 from './item_24.avif'
+import item_25 from './item_25.avif'
+import item_26 from './item_26.avif'
+import item_27 from './item_27.jpg'
+
 
 import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
@@ -84,267 +78,226 @@ export const assets = {
 
 export const menu_list = [
     {
-        menu_name: "Salad",
+        menu_name: "Women's Clothing",
         menu_image: menu_1
     },
     {
-        menu_name: "Rolls",
+        menu_name: "Men's Clothing",
         menu_image: menu_2
     },
     {
-        menu_name: "Deserts",
+        menu_name: "Kids' Clothing",
         menu_image: menu_3
     },
     {
-        menu_name: "Sandwich",
+        menu_name: "Seasonal Wear",
         menu_image: menu_4
     },
     {
-        menu_name: "Cake",
+        menu_name: "Accessories",
         menu_image: menu_5
     },
     {
-        menu_name: "Pure Veg",
+        menu_name: "Sportswear",
         menu_image: menu_6
-    },
-    {
-        menu_name: "Pasta",
-        menu_image: menu_7
-    },
-    {
-        menu_name: "Noodles",
-        menu_image: menu_8
     }]
 
-export const food_list = [
+export const item_list = [
     {
         _id: "1",
-        name: "Greek salad",
-        image: food_1,
+        name: "Casual Plain T-Shirt",
+        image: item_1,
         price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Salad"
+        description: "Yellow Women’s Premium Crew Neck T-Shirt,65/35 Cotton. Softened",
+        category: "Women's Clothing"
     },
     {
         _id: "2",
-        name: "Veg salad",
-        image: food_2,
-        price: 18,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Salad"
+        name: "Navy Blue T-shirt",
+        image: item_2,
+        price: 8,
+        description: "Made from a soft cotton fabric, it is comfortable and breathable. The boxy fit and graphic print make it a stylish choice.",
+        category: "Women's Clothing"
     }, {
         _id: "3",
-        name: "Clover Salad",
-        image: food_3,
+        name: "Wide Leg Jean",
+        image: item_3,
         price: 16,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Salad"
+        description: "Gives elegant look",
+        category: "Women's Clothing"
     }, {
         _id: "4",
-        name: "Chicken Salad",
-        image: food_4,
-        price: 24,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Salad"
+        name: "Casual Denim Cargo Jean",
+        image: item_4,
+        price: 20,
+        description: "High Waist Relaxed Fit Casual Cargo Jeans_6POCKE1T_ICE1_E1",
+        category: "Women's Clothing"
     }, {
         _id: "5",
-        name: "Lasagna Rolls",
-        image: food_5,
+        name: "Straight Fit Rhysley Jean",
+        image: item_5,
         price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
+        description: "Olive Green Straight Fit Rhysley Women's Jean",
+        category: "Women's Clothing"
     }, {
         _id: "6",
-        name: "Peri Peri Rolls",
-        image: food_6,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
+        name: "High Waist Wide Leg Jean",
+        image: item_6,
+        price: 39,
+        description: "Ripped High Waist Wide Leg Jeans",
+        category: "Women's Clothing"
     }, {
         _id: "7",
-        name: "Chicken Rolls",
-        image: food_7,
-        price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
+        name: "Skinny Jean",
+        image: item_7,
+        price: 30,
+        description: "navy Blue Colored Skinny Jean",
+        category: "Women's Clothing"
     }, {
         _id: "8",
-        name: "Veg Rolls",
-        image: food_8,
-        price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
+        name: "Baggy Jean",
+        image: item_8,
+        price: 42,
+        description: "Baggy Oversized Jeans with a graphic t-shirt and high-top sneakers.",
+        category: "Men's Clothing"
     }, {
         _id: "9",
-        name: "Ripple Ice Cream",
-        image: food_9,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
+        name: "Slim Fit Jean",
+        image: item_9,
+        price: 45,
+        description: "Men Lightly Washed Slim Fit Jean",
+        category: "Men's Clothing"
     }, {
         _id: "10",
-        name: "Fruit Ice Cream",
-        image: food_10,
-        price: 22,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
+        name: "Casual Shirt",
+        image: item_10,
+        price: 28,
+        description: "give elegant look ,office wear, function",
+        category: "Men's Clothing"
     }, {
         _id: "11",
-        name: "Jar Ice Cream",
-        image: food_11,
-        price: 10,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
+        name: "Regular Fit Shirt With Flap Pockets",
+        image: item_11,
+        price: 20,
+        description: "Ribbed Regular Fit Shirt with Flap Pockets",
+        category: "Men's  Clothing"
     }, {
         _id: "12",
-        name: "Vanilla Ice Cream",
-        image: food_12,
+        name: "Summer Cotton Dress",
+        image: item_12,
         price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
+        description: "Elegant Baby Girl Casual Striped Children Clothing",
+        category: "Kids' Clothing"
     },
     {
         _id: "13",
         name: "Chicken Sandwich",
-        image: food_13,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
+        image: item_13,
+        price: 15,
+        description: "Gold spotty party dress with bow detail ",
+        category: "Kids' Clothing"
     },
     {
         _id: "14",
-        name: "Vegan Sandwich",
-        image: food_14,
-        price: 18,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
+        name: "Summer Boy Set",
+        image: item_14,
+        price: 20,
+        description: "Comfortable,elegant look",
+        category: "Kids' Clothing"
     }, {
         _id: "15",
-        name: "Grilled Sandwich",
-        image: food_15,
-        price: 16,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
+        name: "Dressy Outfit",
+        image: item_15,
+        price: 18,
+        description: "Boys Dressy Outfit",
+        category: "Kids' Clothing"
     }, {
         _id: "16",
-        name: "Bread Sandwich",
-        image: food_16,
+        name: "Vintage Boho Summer Dress",
+        image: item_16,
         price: 24,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
+        description: "Sleeveless Casual Holiday Striped Shirt Dress",
+        category: "Seasonal Wear"
     }, {
         _id: "17",
-        name: "Cup Cake",
-        image: food_17,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
+        name: "Denim Bag",
+        image: item_17,
+        price: 10,
+        description: "Unicorn Denim Bag",
+        category: "Accessories"
     }, {
         _id: "18",
-        name: "Vegan Cake",
-        image: food_18,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
+        name: "Butterfly Hair pin",
+        image: item_18,
+        price: 8,
+        description: "5Pcs Butterfly Hairpin",
+        category: "Accessories"
     }, {
         _id: "19",
-        name: "Butterscotch Cake",
-        image: food_19,
+        name: "Luxury Jewelry Design Hairpin",
+        image: item_19,
         price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
+        description: "Flower Luxury Jewelry Design Hairpin, Deep Ocean Blue Rhinestone Hair Barrette Clip",
+        category: "Accessories"
     }, {
         _id: "20",
-        name: "Sliced Cake",
-        image: food_20,
-        price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
+        name: "Diamond Watch",
+        image: item_20,
+        price: 20,
+        description: "Women Crystal Diamond Watches",
+        category: "Accessories"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
-        image: food_21,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        name: "Heel Shoe ",
+        image: item_21,
+        price: 30,
+        description: "Thick heel buckle pointed shoe",
+        category: "Accessories"
     }, {
         _id: "22",
-        name: "Fried Cauliflower",
-        image: food_22,
-        price: 22,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        name: "Toddler Shoe",
+        image: item_22,
+        price: 20,
+        description: "comfortable for babies, best gift for present ata baby shower",
+        category: "Accessories"
     }, {
         _id: "23",
-        name: "Mix Veg Pulao",
-        image: food_23,
+        name: "Sportswear Yoga Set",
+        image: item_23,
         price: 10,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        description: "Women Sexy Red Sportswear Yoga Set Gym Clothing Sports Fitness Bra Tops Leggings Tight Pants 2Pcs",
+        category: "Sportswear"
     }, {
         _id: "24",
-        name: "Rice Zucchini",
-        image: food_24,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        name: "Men Gym Wear",
+        image: item_24,
+        price: 15,
+        description: "3 Pieces Set Polyester Sportswear Compression Fitness Clothes Men",
+        category: "Sportswear"
     },
     {
         _id: "25",
-        name: "Cheese Pasta",
-        image: food_25,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pasta"
+        name: "Fitness Yoga Set",
+        image: item_25,
+        price: 13,
+        description: "Sportswear Women Gym High Waist Leggings And Bra Workout Clothes Seamless Fitness Yoga Set",
+        category: "Sportswear"
     },
     {
         _id: "26",
-        name: "Tomato Pasta",
-        image: food_26,
-        price: 18,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pasta"
-    }, {
+        name: "Gym Fitness Yoga Set",
+        image: item_26,
+        price: 11,
+        description: "Women's Sports Wear Gym Fitness Yoga Sets, Women Sportswear V Waist Workout Clothes For Women",
+        category: "Sportswear"
+    },
+    {
         _id: "27",
-        name: "Creamy Pasta",
-        image: food_27,
-        price: 16,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pasta"
-    }, {
-        _id: "28",
-        name: "Chicken Pasta",
-        image: food_28,
-        price: 24,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pasta"
-    }, {
-        _id: "29",
-        name: "Buttter Noodles",
-        image: food_29,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Noodles"
-    }, {
-        _id: "30",
-        name: "Veg Noodles",
-        image: food_30,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Noodles"
-    }, {
-        _id: "31",
-        name: "Somen Noodles",
-        image: food_31,
-        price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Noodles"
-    }, {
-        _id: "32",
-        name: "Cooked Noodles",
-        image: food_32,
-        price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Noodles"
+        name: "Men Workout Outfits",
+        image: item_27,
+        price: 2,
+        description: "In fact, many guys wear these outfits for casual outings or on a casual date.",
+        category: "Sportswear"
     }
+    
 ]
