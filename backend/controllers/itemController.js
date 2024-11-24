@@ -1,13 +1,13 @@
-import foodModel from "../models/foodModel.js";
+import itemModel from "../models/itemModel.js";
 import fs from 'fs'
 
 // add food item
 
-const addFood = async (req,res) => {
+const addItem = async (req,res) => {
 
     let image_filename = `${req.file.filename}`;
 
-    const food = new foodModel({
+    const item = new itemModel({
         name:req.body.name,
         description:req.body.description,
         price:req.body.price,
@@ -15,8 +15,8 @@ const addFood = async (req,res) => {
         image:image_filename
     })
     try {
-        await food.save();
-        res.json({success:true,message:"Food Added"})
+        await item.save();
+        res.json({success:true,message:"Item Added"})
 
     } catch (error) {
         console.log(error)
@@ -25,10 +25,10 @@ const addFood = async (req,res) => {
 }
 
 //all food list
-const listFood = async (req,res) => {
+const listItem = async (req,res) => {
     try {
-        const foods = await foodModel.find({});
-        res.json({success:true,data:foods})
+        const items = await itemModel.find({});
+        res.json({success:true,data:items})
     } catch (error) {
         console.log(error);
         res.json({success:false,message:"Error"})
@@ -36,13 +36,13 @@ const listFood = async (req,res) => {
 }
 
 //remove food item
-const removeFood = async (req,res) => {
+const removeItem = async (req,res) => {
     try {
-        const food = await foodModel.findById(req.body.id);
-        fs.unlink(`uploads/${food.image}` ,()=>{})
+        const item = await itemModel.findById(req.body.id);
+        fs.unlink(`uploads/${item.image}` ,()=>{})
 
-        await foodModel.findByIdAndDelete(req.body.id);
-        res.json({success:true,message:"Food Removed"})
+        await itemModel.findByIdAndDelete(req.body.id);
+        res.json({success:true,message:"Item Removed"})
         
     } catch (error) {
         console.log(error);
@@ -50,4 +50,4 @@ const removeFood = async (req,res) => {
 
     }
 }
-export {addFood,listFood,removeFood}
+export {addItem,listItem,removeItem}
