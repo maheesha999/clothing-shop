@@ -102,7 +102,7 @@ export const menu_list = [
         menu_image: menu_6
     }]
 
-export const item_list = [
+export const product_list = [
     {
         _id: "1",
         name: "Casual Plain T-Shirt",
