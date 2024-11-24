@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import './ItemDisplay.css'
 import { StoreContext } from '../../../context/StoreContext'
-import ClothingItem from '../../ClothingItem/ClothingItem'
+import Item from '../../Item/Item'
 
 const ItemDisplay = ({category}) => {
 
@@ -14,7 +14,7 @@ const ItemDisplay = ({category}) => {
                 {console.log(category,item.category);}
 
                 if(category==="All" || category===item.category){
-                    return<ClothingItem key={index} id={item._id} name={item.name} description={item.description} price={item.price} image={item.image} />
+                    return<Item key={index} id={item._id} name={item.name} description={item.description} price={item.price} image={item.image} />
                 }
                 
             })}

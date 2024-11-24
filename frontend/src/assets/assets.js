@@ -115,7 +115,7 @@ export const item_list = [
         _id: "2",
         name: "Navy Blue T-shirt",
         image: item_2,
-        price: 8,
+        price: 18,
         description: "Made from a soft cotton fabric, it is comfortable and breathable. The boxy fit and graphic print make it a stylish choice.",
         category: "Women's Clothing"
     }, {

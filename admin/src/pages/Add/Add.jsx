@@ -12,7 +12,7 @@ const Add = ({url}) => {
         name:"",
         description:"",
         price:"",
-        category:"Salad"
+        category:"Women's Clothing"
     })
 
         const onChangeHandler = (event) => {
@@ -30,13 +30,13 @@ const Add = ({url}) => {
         formData.append("price",Number(data.price))
         formData.append("category",data.category)
         formData.append("image",image)
-        const response = await axios.post(`${url}/api/food/add`,formData);
+        const response = await axios.post(`${url}/api/item/add`,formData);
         if (response.data.success) {
             setData({
                 name:"",
                 description:"",
                 price:"",
-                category:"Salad"
+                category:"Women's Clothing"
             })
             setImage(false)
             toast.success(response.data.message)
@@ -68,18 +68,18 @@ const Add = ({url}) => {
                 <div className="add-category flex-col">
                     <p>Product category</p>
                     <select onChange={onChangeHandler} name="category" >
-                        <option value="Rolls">Sarees</option>
-                        <option value="Deserts">Bags</option>
-                        <option value="Sandwich">Women clothing</option>
-                        <option value="Cake">Men Clothing</option>
-                        <option value="Pure Veg">Watches</option>
-                        <option value="Pasta">Shoes</option>
-                        <option value="Noodles">Sunglasses</option>
+                        <option value="Women's Clothing">Women's Clothing</option>
+                        <option value="Men's Clothing">Men's Clothing</option>
+                        <option value="Kid's Clothing">Kid's clothing</option>
+                        <option value="Seasonal Wear">Seasonal Wear</option>
+                        <option value="Accessories">Accessories</option>
+                        <option value="Sportswear">Sportswear</option>
+                       
                     </select>
                 </div>
                 <div className="add-price flex-col">
                     <p>Product price</p>
-                    <input onChange={onChangeHandler} value={data.price} type="Number" name='price' placeholder='$20' />
+                    <input onChange={onChangeHandler} value={data.price} type="Number" name='price' placeholder='20' />
 
                 </div>
             </div>
