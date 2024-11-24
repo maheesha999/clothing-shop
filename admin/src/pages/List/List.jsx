@@ -7,7 +7,7 @@ const List = ({url}) => {
      const [list,setList] = useState([]);
 
     const fetchList = async () => {
-      const response = await axios.get(`${url}/api/item/list`);
+      const response = await axios.get(`${url}/api/product/list`);
       
        if (response.data.success){
             setList(response.data.data)
@@ -17,8 +17,8 @@ const List = ({url}) => {
        }
   }
 
-       const removeItem = async(itemId) =>{
-          const response = await axios.post(`${url}/api/item/remove`,{id:itemId});
+       const removeProduct = async(productId) =>{
+          const response = await axios.post(`${url}/api/product/remove`,{id:productId});
           await fetchList();
           if(response.data.success){
              toast.success(response.data.message)
@@ -49,8 +49,8 @@ const List = ({url}) => {
                                <img src={`${url}/images/`+item.image} alt="" />
                                <p>{item.name}</p>
                                <p>{item.category}</p>
-                               <p>{item.price}</p>
-                               <p onClick={()=>removeItem(item._id)}  className='cursor'>X</p>
+                               <p>${item.price}</p>
+                               <p onClick={()=>removeProduct(item._id)}  className='cursor'>X</p>
                           </div>
                        ) 
                    })}
