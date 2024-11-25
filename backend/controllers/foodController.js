@@ -1,7 +1,7 @@
 import foodModel from "../models/foodModel.js";
 import fs from 'fs'
 
-// add food item
+// add item
 
 const addFood = async (req,res) => {
 
@@ -24,7 +24,7 @@ const addFood = async (req,res) => {
     }
 }
 
-//all food list
+//all list
 const listFood = async (req,res) => {
     try {
         const foods = await foodModel.find({});
@@ -35,7 +35,7 @@ const listFood = async (req,res) => {
     }
 }
 
-//remove food item
+//remove item
 const removeFood = async (req,res) => {
     try {
         const food = await foodModel.findById(req.body.id);
