@@ -10,7 +10,7 @@ const StoreContextProvider = (props) => {
     const [cartItems,setCartItems] = useState({});
     const url = "http://localhost:4000"
     const [token,setToken] = useState("");
-    const [product_list,setProductList] = useState([])
+    const [food_list,setFoodList] = useState([])
 
     const addToCart = async (itemId) => {
         if (!cartItems[itemId]){
@@ -36,16 +36,16 @@ const StoreContextProvider = (props) => {
         for(const item in cartItems)
             {
                 if (cartItems[item] > 0) {
-                    let itemInfo = product_list.find((product) => product._id === item);
+                    let itemInfo = food_list.find((product) => product._id === item);
                     totalAmount += itemInfo.price * cartItems[item];
                 }   
             }
             return totalAmount;
     }
 
-    const fetchProductList = async () => {
-        const response = await axios.get(url+"/api/product/list");
-        setProductList(response.data.data)
+    const fetchFoodList = async () => {
+        const response = await axios.get(url+"/api/food/list");
+        setFoodList(response.data.data)
     }
 
     const loadCartData = async (token) => {
@@ -55,7 +55,7 @@ const StoreContextProvider = (props) => {
 
     useEffect(()=>{
       async function loadData() {
-            await fetchProductList();
+            await fetchFoodList();
             if (localStorage.getItem("token")) {
                 setToken(localStorage.getItem("token"));
                 await loadCartData(localStorage.getItem("token"));
@@ -66,7 +66,7 @@ const StoreContextProvider = (props) => {
     },[])
 
     const contextValue = {
-        product_list,
+        food_list,
         cartItems,
         setCartItems,
         addToCart,

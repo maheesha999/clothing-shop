@@ -30,7 +30,7 @@ const Add = ({url}) => {
         formData.append("price",Number(data.price))
         formData.append("category",data.category)
         formData.append("image",image)
-        const response = await axios.post(`${url}/api/product/add`,formData);
+        const response = await axios.post(`${url}/api/food/add`,formData);
         if (response.data.success) {
             setData({
                 name:"",
@@ -67,7 +67,7 @@ const Add = ({url}) => {
             <div className="add-category-price">
                 <div className="add-category flex-col">
                     <p>Product category</p>
-                    <select onChange={onChangeHandler} name="category" >
+                    <select onChange={onChangeHandler} value={data.category} name="category" required >
                         <option value="Women's Clothing">Women's Clothing</option>
                         <option value="Men's Clothing">Men's Clothing</option>
                         <option value="Kid's Clothing">Kid's clothing</option>
