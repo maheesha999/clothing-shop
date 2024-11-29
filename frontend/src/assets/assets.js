@@ -44,6 +44,7 @@ import product_32 from './product_32.jpg'
 import product_33 from './product_33.jpg'
 import product_34 from './product_34.jpg'
 import product_35 from './product_35.jpg'
+import product_36 from './product_36.jpg'
 
 
 import add_icon_white from './add_icon_white.png'
@@ -370,6 +371,14 @@ export const food_list = [
         price: 38,
         description: "Versatile, comfortable piece of clothing made from soft fabrics",
         category: "Men's Clothing"
+    },
+    {
+        _id: "36",
+        name: "Puffer Jacket",
+        image: product_36,
+        price: 40,
+        description: "Add warmth while offering comfort,clothing made from soft fabrics",
+        category: "Seasonal Wear"
     }
     
     
