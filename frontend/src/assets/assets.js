@@ -41,6 +41,9 @@ import product_29 from './product_29.jpg'
 import product_30 from './product_30.jpg'
 import product_31 from './product_31.jpg'
 import product_32 from './product_32.jpg'
+import product_33 from './product_33.jpg'
+import product_34 from './product_34.jpg'
+import product_35 from './product_35.jpg'
 
 
 import add_icon_white from './add_icon_white.png'
@@ -343,6 +346,30 @@ export const food_list = [
         price: 25,
         description: "perfect blend of elegance and warmth, ideal for chilly seasons ",
         category: "Kid's Clothing"
+    },
+    {
+        _id: "33",
+        name: "Winter Dress",
+        image: product_33,
+        price: 32,
+        description: "Add warmth while offering comfort and style of regular t-shirt. ",
+        category: "Seasonal Wear"
+    },
+    {
+        _id: "34",
+        name: "Zip T-shirt",
+        image: product_34,
+        price: 40,
+        description: "Can adjust the neckline, allowing to modify the fit and style the shirt.",
+        category: "Men's Clothing"
+    },
+    {
+        _id: "35",
+        name: "Casual T-shirt",
+        image: product_35,
+        price: 38,
+        description: "Versatile, comfortable piece of clothing made from soft fabrics",
+        category: "Men's Clothing"
     }
     
     
